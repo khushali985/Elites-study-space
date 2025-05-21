@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EILITE'S STUDY SPACE</title>
+    {% load static%}
+    <link rel="stylesheet" href="{% static 'styles/footer.css'%} ">
+    <link rel="stylesheet" href="{% static 'styles/header.css'%} ">
+    <link rel="stylesheet" href="{% static 'styles/general.css'%} ">
+    <link href='https://fonts.googleapis.com/css?family=Nerko One' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="header">
+        <div class="upper-section" >
+            <div> <img class="logo" src="{% static 'images/STUDY ORBIT.png' %} "> </div>
+            <div class="content">
+            <p style="font-weight:bold;" >
+            STUDY ORBIT
+            </p> 
+            </div>            
+        </div>
+    </div>
+       
+    <div class="middle-section">
+      <!--Branch Selection-->
+       <div class="dropdown">
+            <button class="dropbtn">Branch</button> 
+            <div class="dropdown-content">
+                <a href="Computer_Engineering.html">Computer Engineering</a>
+                <a href="Civil_Engineering.html">Civil Engineering</a>
+                <a href="Mechanical_Engineering.html">Michenical Engineering</a>
+            </div>
+        </div>
+    
+        <div class="dropdown">
+        <!--Upload Button-->
+        <div>
+        <button class="dropbtn" onclick="window.location.href='{% url 'upload_file'%}'">Upload</button>
+        </div>
+        </div>
+
+    
+        <!--User Help Desk-->
+        <div class="dropdown">
+        <button class="dropbtn">Help</button>
+        <div class="dropdown-content">
+            <a href="elite@gamil.com">elite@gmail.com</a>
+            <a>+91 34554546464</a>
+            </div>
+        </div>  
+
+    </div>   
+     
+    <div class="bottom-section">
+        <div class="title">About us:</div>
+        <div class="about-text">
+        <p> STUDY ORBIT is dedicated to helping students 
+            by providing access to 
+            solved assignments, important questions, and frequently asked questions. 
+            Our mission is to make academic resources easily accessible for everyone.
+        </p>
+        <br>
+        <p> <a href="study_moment_gallery" > STUDY MOMENTS <a/>is 
+           where students share and celebrate even their smallest study victories,
+           reminding them they are not alone.<br> Every win, no matter how small, 
+           matters and reflects the progress they've made on their journey!<br>
+           <p>Present your achievements to your future self
+            and see how even the smallest victories shape the best version of you. <br>
+            Every step forward shows that you made it and it was all worth it! </p>
+        </p>
+        </div>
+    </div>
+
+</body>
+</html>
