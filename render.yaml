@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: elite-study-space        # You can rename this as you like
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn ESS.wsgi:application
+    envVars:
+      - key: DJANGO_SETTINGS_MODULE
+        value: ESS.settings
+      - key: SECRET_KEY
+        value: django-insecure-)28e-htkt@hq=cy)mv+kq-h1ya-8)-vd)ubc-f&cmi6!(9%f=y
+      - key: DEBUG
+        value: False
+      - key: CLOUDINARY_CLOUD_NAME
+        value: djzugws7u
+      - key: CLOUDINARY_API_KEY
+        value: 461533573584791
+      - key: CLOUDINARY_API_SECRET
+        value: Nk8bWvLLBHkG9SckMMwszR-CWMw
