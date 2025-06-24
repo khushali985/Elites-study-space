@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Moment Gallery</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'styles/ESS_moments.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/footer.css.' %}">
+    <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/general.css' %}">
+    <link rel="stylesheet" href="{% static 'styles/upload.css' %}">
+
+
+</head>
+<body>
+    <div class="upper-section">
+        <div class="content">
+            <p>Elite's Study Moment Gallery</p>
+        </div>
+    </div>
+
+    <div class="gallery">
+        {% for study_moment in study_moments %}
+            <img src="{{ study_moment.image.url }}" alt="Study Moment">
+        {% endfor %}
+    </div>
+
+    <br>
+    <form method = "POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <label for="image">YOUR STUDY MOMENT:</label>
+        <input type="file" name="image" required>
+        <button type="submit" >Upload</button>
+    
+    </form>
+    
+</body>
+</html>

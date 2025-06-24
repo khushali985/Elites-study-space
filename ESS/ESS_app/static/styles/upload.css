@@ -1,0 +1,75 @@
+/* styles/general.css */
+
+body {
+    font-family: 'Nerko One', sans-serif;
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 8px;
+}
+/*
+.upper-section {
+    background-color: #4CAF50;
+    color: antiquewhite;
+    padding: 20px;
+    text-align: center;
+}
+*/
+.content p {
+    margin: 0;
+    font-size: 40px;
+}
+
+form {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    font-size: 1.2em;
+    margin: 10px 0 5px;
+    color:#4CAF50;
+    
+}
+
+select, input[type="text"], input[type="file"] {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: darkseagreen;
+    color: antiquewhite;
+}
+
+.inputbox {
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.labelline {
+    font-size: 0.9em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+    background-color: white;
+    padding: 0 5px;
+    color: #4CAF50;
+    border-radius: 4px;
+   
+}
+
+input:focus {
+    outline: none;
+    border-color: #4CAF50;
+}

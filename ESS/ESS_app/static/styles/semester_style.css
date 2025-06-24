@@ -1,0 +1,96 @@
+.semester > li, .semester > a {
+    display: grid;
+    width: 250px;
+}
+
+.semester a {
+    text-decoration: none;
+    color: #4CAF50;
+    display: grid;
+    width:250px;
+    border-radius: 20px;
+    padding: 10px 1.1rem;
+    transition: background-color .22s ease, color .22s ease;
+}
+
+.semester a:hover{
+    background-color: darkseagreen;
+    color:antiquewhite;
+    width: 280px;
+    cursor: pointer;
+    
+}
+
+.semester li {
+    position: relative;
+    list-style-type: none;
+    
+}
+
+.subjects {
+    position: absolute;
+    background-color:antiquewhite;
+    width: 280px;
+    display: none;
+    border-radius: 20px;
+    padding-left:0;
+    font-size: 1em;
+}
+
+.study_material {
+    position: absolute;
+    left: 100%;
+    width: 150px;
+    top: 0;
+    background-color:antiquewhite;
+    display: none;
+    border-radius: 20px;
+    padding-left: 0;
+    box-shadow: 5px 10px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.semester li:hover > .subjects {
+    display: block;
+    animation: slideleft .5s ease;
+    margin-left:100px;
+    z-index: 1;
+    border: 1px solid #ddd;
+    box-shadow: 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.subjects li:hover > .study_material {
+    display:block;
+    animation: slideleft .5s ease;
+    margin-left:10px;
+    z-index: 1;
+    border: 1px solid #ddd;
+    
+}
+
+.study_material a:hover{
+    width: 120px;
+}
+
+@keyframes slideup {
+    0% {
+        opacity: 0;
+        transform: translateY(18px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+@keyframes slideleft {
+    0% {
+        opacity: 0;
+        transform: translateX(18px);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}

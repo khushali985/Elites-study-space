@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Successful</title>
+    {% load static %}
+        <link rel="stylesheet" href="{% static 'styles/upload.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/general.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/footer.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/ESS_moments.css' %}">
+        
+  
+</head>
+<body>
+    <div class="upper-section" >
+        <div class="content">
+        <p style="font-weight:bold;" >
+            File uploaded successfully!
+        </p> 
+        </div>            
+    </div>
+
+        <div class="middle-section">
+            <!--Branch Selection-->
+             <div class="dropdown">
+                  <button class="dropbtn">Branch</button> 
+                  <div class="dropdown-content">
+                      <a href="Computer_Engineering.html">Computer Engineering</a>
+                      <a href="Civil_Engineering.html">Civil Engineering</a>
+                      <a href="Mechanical_Engineering.html">Michenical Engineering</a>
+                  </div>
+              </div>
+          
+              <div class="button">
+              <!--Upload Button-->
+              <div>
+              <button onclick="window.location.href='{% url 'upload_file'%}'">Upload another file</button>
+              </div>
+              </div>
+      
+          
+              <!--home-->
+              <div class="utton">
+                <button onclick="window.location.href='{% url 'Home_page'%}'" >home</button>
+              </div>  
+      
+        </div> 
+
+        <div class="bottom-section">
+            <div class="title">ELITE'S STUDY MOMENTS:</div>
+            <div class="gallery">
+                {% for study_moment in study_moments %}
+                    <img src="{{ study_moment.image.url }}" alt="Study Moment">
+                {% endfor %}
+            </div>
+        
+            <br>
+            <button href="{% url 'upload_study_moment' %}">Upload New Study Moment</button>
+        </div>
+
+        
+    
+</body>
+</html>
