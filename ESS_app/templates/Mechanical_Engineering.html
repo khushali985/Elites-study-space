@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mechanical Engineering</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles/semester_style.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+        <link href='https://fonts.googleapis.com/css?family=Nerko One' rel='stylesheet'>
+
+    </head>
+
+    <body>
+
+        <div class="upper-section" >
+            <div class="content">
+            <p style="font-weight:bold;" >
+            Mechanical Engineering
+            </p> 
+            </div>            
+        </div>
+
+        <ul class="semester">
+   
+        <li><a>semester 1</a>
+            <ul class="subjects">
+                <li><a>Physics (3110018)</a>
+                    <ul class="study_material">
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'assignments' %}">assignments</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'notes' %}">notes</a></li>
+                        <li><a  href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'Syllabus' %}">Syllabus</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                </li>
+                <li><a>Mathematics-1 (3110014)</a>
+                    <ul class="study_material">
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'assignments' %}">assignments</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'notes' %}">notes</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'Syllabus' %}">Syllabus</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                </li>
+                <li><a>Basic electrical Engineering (3110005) </a>
+                    <ul class="study_material">
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'assignments' %}">assignments</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'notes' %}">notes</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'Syllabus' %}">Syllabus</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                </li>
+                <li><a>Basic Mechanical Engineering (3110006)</a>
+                    <ul class="study_material">
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110006' 'Basic Mechanical Engineering' 'assignments' %}">assignments</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110006' 'Basic Mechanical Engineering' 'notes' %}">notes</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110006' 'Basic Mechanical Engineering' 'Syllabus' %}">Syllabus</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110006' 'Basic Mechanical Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                </li>
+        
+                <li><a>Universal Human Values-IPDC (3110016)</a>
+                    <ul class="study_material">
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110016' 'IPDC' 'assignments' %}">assignments</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110016' 'IPDC' 'notes' %}">notes</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110016' 'IPDC' 'Syllabus' %}">Syllabus</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110016' 'IPDC' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <li><a>semester 2</a>
+            <ul class="subjects">
+
+                    <li><a>Engineering Graphic and Design (3110013)</a>
+                        <ul class="study_material">
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'ENgineering Graphics and Design' 'assignment' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Mathematics-2 (3110015)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>English for technical communication</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110002' 'English for technical communication' 'assignment' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110002' 'English for technical communication' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110002' 'English for technical communication' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110002' 'English for technical communication' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Programming for Problem solving-PPS (3110003)</a>
+                        <ul class="study_material">
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>IRP/Fundamental for AI/ industrial saftey and standard</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' 'BE02000041' 'Fundamentals of AI' 'assignments' %}">assignments</a></li>
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' 'BE02000041' 'Fundamentals of AI' 'notes' %}">notes</a></li>
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' 'BE02000041' 'Fundamentals of AI' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' 'BE02000041' 'Fundamentals of AI' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+            </ul>
+        </li>
+
+<li><a>semester 3</a>
+    <ul class="subjects">
+        <li><a>Effective Technical Communication (3130004)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Complex Variable and Partial Differential Equations (3130005)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3130005' 'Complex Variable and Partial Differential Equations' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3130005' 'Complex Variable and Partial Differential Equations' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3130005' 'Complex Variable and Partial Differential Equations' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3130005' 'Complex Variable and Partial Differential Equations' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Design Engineering-1A (3130008)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3130008' 'Design Engineering-1A' 'Syllabus' %}">Syllabus</a></li>
+            </ul>
+        </li>
+
+        <li><a>Indian Constitution (3130007)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3130007' 'Indian Constitution' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3130007' 'Indian Constitution' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3130007' 'Indian Constitution' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3130007' 'Indian Constitution' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Material Science and Metallurgy (3131904)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131904' 'Material Science and Metallurgy' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131904' 'Material Science and Metallurgy' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131904' 'Material Science and Metallurgy' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131904' 'Material Science and Metallurgy' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Engineering Thermodynamics (3131905)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131905' 'Engineering Thermodynamics' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131905' 'Engineering Thermodynamics' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131905' 'Engineering Thermodynamics' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131905' 'Engineering Thermodynamics' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Kinematics And Theory of Machines (3131906)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131906' 'Kinematics And Theory of Machines' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131906' 'Kinematics And Theory of Machines' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131906' 'Kinematics And Theory of Machines' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 3 '3131906' 'Kinematics And Theory of Machines' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+<li><a>semester 4</a>
+    <ul class="subjects">
+
+        <li><a>Mechanical Measurement and Metrology (3141901)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141901' 'Mechanical Measurement and Metrology' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141901' 'Mechanical Measurement and Metrology' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141901' 'Mechanical Measurement and Metrology' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141901' 'Mechanical Measurement and Metrology' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Design Engineering-1B (3140005)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3140005' 'Design Engineering-1B' 'Syllabus' %}">Syllabus</a></li>
+            </ul>
+        </li>
+
+        <li><a>Fluid Mechanics and Hydraulic Machines (3141906)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141906' 'Fluid Mechanics and Hydraulic Machines' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141906' 'Fluid Mechanics and Hydraulic Machines' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141906' 'Fluid Mechanics and Hydraulic Machines' 'FAQs' %}">FAQs</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141906' 'Fluid Mechanics and Hydraulic Machines' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Fundamentals of Machine Design (3141907)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141907' 'Fundamentals of Machine Design' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141907' 'Fundamentals of Machine Design' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141907' 'Fundamentals of Machine Design' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141907' 'Fundamentals of Machine Design' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Manufacturing Processes (3141908)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141908' 'Manufacturing Processes' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141908' 'Manufacturing Processes' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141908' 'Manufacturing Processes' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141908' 'Manufacturing Processes' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Organizational Behavior (3141909)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141909' 'Organizational Behavior' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141909' 'Organizational Behavior' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141909' 'Organizational Behavior' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 4 '3141909' 'Organizational Behavior' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</li>
+
+<li><a>semester 5</a>
+    <ul class="subjects">
+
+        <li><a>Heat Transfer (3151909)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151909' 'Heat Transfer' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151909' 'Heat Transfer' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151909' 'Heat Transfer' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151909' 'Heat Transfer' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Operation Research (3151910)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151910' 'Operation Research' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151910' 'Operation Research' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151910' 'Operation Research' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151910' 'Operation Research' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Dynamics of Machinery (3151911)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151911' 'Dynamics of Machinery' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151911' 'Dynamics of Machinery' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151911' 'Dynamics of Machinery' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151911' 'Dynamics of Machinery' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Manufecturing Technology (3151912)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151912' 'Manufecturing Technology' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151912' 'Manufecturing Technology' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151912' 'Manufecturing Technology' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151912' 'Manufecturing Technology' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Oil Hydraulics and Pneumatic (3151913)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151913' 'Oil Hydraulics and Pneumatic' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151913' 'Oil Hydraulics and Pneumatic' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151913' 'Oil Hydraulics and Pneumatic' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3151913' 'Oil Hydraulics and Pneumatic' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Design Engineering (3150001)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 5 '3150001' 'Design Engineering' 'Syllabus' %}">Syllabus</a></li>
+            </ul>
+        </li>
+
+    </ul>
+</li>
+
+<li><a>semester 6</a>
+    <ul class="subjects">
+        <li><a>Computer Aided Design (3161903)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161903' 'Computer Aided Design' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161903' 'Computer Aided Design' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161903' 'Computer Aided Design' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161903' 'Computer Aided Design' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Applied Thermodynamics (3161910)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161910' 'Applied Thermodynamics' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161910' 'Applied Thermodynamics' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161910' 'Applied Thermodynamics' 'FAQs' %}">FAQs</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161910' 'Applied Thermodynamics' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Computer Aided Manufacturing (3161917)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161917' 'Computer Aided Manufacturing' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161917' 'Computer Aided Manufacturing' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161917' 'Computer Aided Manufacturing' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161917' 'Computer Aided Manufacturing' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Advanced Manufactruing Processes (3161922)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161922' 'Advanced Manufactruing Processes' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161922' 'Advanced Manufactruing Processes' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161922' 'Advanced Manufactruing Processes' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161922' 'Advanced Manufactruing Processes' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Industry 4.0 (3161926)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161926' 'Industry 4.0' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161926' 'Industry 4.0' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161926' 'Industry 4.0' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3161926' 'Industry 4.0' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Design Engineering (3160001)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Mechanical Engineering' 6 '3160001' 'Design Engineering' 'Syllabus' %}">Syllabus</a></li>
+            </ul>
+        </li>
+
+        </ul>
+        </li>
+
+        </ul>
+    
+    </body>
+
+</html>

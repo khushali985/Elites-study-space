@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Nerko One' rel='stylesheet'>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/upload.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/general.css' %}">
+        
+        <title>Upload</title>
+</head>
+
+<body>
+        <div class="upper-section">
+            <div class="content">
+                <p style="font-weight:bold;" >
+                UPLOAD
+                </p> 
+            </div>
+        </div> 
+
+        <form method="post" enctype="multipart/form-data">
+                {%csrf_token %}
+            
+                <label for="id_branch">Branch:</label>
+                <select name="branch" id="id_branch" required>
+                <option value="Computer Engineering">Computer Engineering</option>
+                <option value="Civil Engineering">Civil Engineering</option>
+                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                </select>
+
+                <label for="id_semester">Semester:</label>
+                <select name="semester" id="id_semester" required>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                </select>
+
+                <label for="id_material_type">Material Type:</label>
+                <select name="material_type" id="id_material_type" required>
+                <option value="assignments">assignments</option>
+                <option value="notes">notes</option>
+                <option value="FAQs">Syllabus</option>
+                <option value="GTU Question paper">GTU Question paper</option>
+                </select>
+
+                <div class="inputbox">
+                    <input type="text" name="subject_code" id="id_subject_code"required>
+                    
+                    <div class="labelline">subject code</div>
+                </div>
+
+                <div class="inputbox">
+                    <input type="text" name="subject_name" id="id_subject_name"required>
+                    <div class="labelline">subject name</div>
+                </div>
+
+                <label for="id_file">Upload File: </label>
+                <input type="file" name="file" id="id_file" required>
+                <button type= "submit" >Upload</button>
+        </form>
+
+        <!--
+        <form method = "POST" enctype="multipart/form-data">
+                {% csrf_token %}
+                <label for="image">YOUR STUDY MOMENT:</label>
+                <input type="file" name="image" required>
+                <button type="submit" >Upload</button>
+            
+        </form> -->
+</body>
+</html>

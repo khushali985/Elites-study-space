@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Computer Engineering</title>
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'styles/semester_style.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+        <link href='https://fonts.googleapis.com/css?family=Nerko One' rel='stylesheet'>
+
+    </head>
+
+    <body>
+            <div class="upper-section" >
+                <div class="content">
+                <p style="font-weight:bold;" >
+                Computer Engineering
+                </p> 
+                </div>            
+            </div>
+
+        <ul class="semester">
+   
+            <li><a>semester 1</a>
+                <ul class="subjects">
+                    <li><a>Physics (3110018)</a>
+                    <ul class="study_material">
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'assignments' %}">assignments</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'notes' %}">notes</a></li>
+                        <li><a  href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'Syllabus' %}">Syllabus</a></li>
+                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                    </li>
+                    <li><a>Mathematics-1 (3110014)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Basic electrical Engineering (3110005) </a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Basic Mechanical Engineering (3110006)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110006' 'Basic Mechanical Engineering' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110006' 'Basic Mechanical Engineering' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110006' 'Basic Mechanical Engineering' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110006' 'Basic Mechanical Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a>Universal Human Values-IPDC (3110016)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110016' 'IPDC' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110016' 'IPDC' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110016' 'IPDC' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110016' 'IPDC' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a>semester 2</a>
+                <ul class="subjects">
+                    <li><a>Engineering Graphic and Design (3110013)</a>
+                        <ul class="study_material">
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'ENgineering Graphics and Design' 'assignment' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                     <li><a>Basic Electronics Engineering ()</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110016' 'Basic Electronics Engineering' 'assignment' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110016' 'Basic Electronics Engineering' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110016' 'Basic Electronics Engineering' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110016' 'Basic Electronics Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Mathematics-2 (3110015)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>English for technical communication</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110002' 'English for technical communication' 'assignment' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110002' 'English for technical communication' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110002' 'English for technical communication' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110002' 'English for technical communication' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a>IRP/Fundamental for AI/ industrial saftey and standard</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' 'BE02000041' 'Fundamentals of AI' 'assignments' %}">assignments</a></li>
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' 'BE02000041' 'Fundamentals of AI' 'notes' %}">notes</a></li>
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' 'BE02000041' 'Fundamentals of AI' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' 'BE02000041' 'Fundamentals of AI' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a>Programming for Problem solving-PPS (3110003)</a>
+                        <ul class="study_material">
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+<li><a>semester 3</a>
+    <ul class="subjects">
+        <li><a>Effective Technical Communication (3130004)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Probability and Statistics (3130006)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130006' 'Probability and Statistics' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130006' 'Probability and Statistics' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130006' 'Probability and Statistics' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130006' 'Probability and Statistics' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Indian Constitution (3130007)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130007' 'Indian Constitution' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130007' 'Indian Constitution' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130007' 'Indian Constitution' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130007' 'Indian Constitution' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Data Structures (3130702)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130702' 'Data Structures' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130702' 'Data Structures' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130702' 'Data Structures' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130702' 'Data Structures' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Database Management Systems (3130703)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130703' 'Database Management Systems' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130703' 'Database Management Systems' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130703' 'Database Management Systems' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130703' 'Database Management Systems' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Digital Fundamentals (3130704)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130704' 'Digital Fundamentals' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130704' 'Digital Fundamentals' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130704' 'Digital Fundamentals' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130704' 'Digital Fundamentals' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Design Engineering-1A (3130008)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130008' 'Design Engineering-1A' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130008' 'Design Engineering-1A' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130008' 'Design Engineering-1A' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130008' 'Design Engineering-1A' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+
+<li><a>semester 4</a>
+    <ul class="subjects">
+        <li><a>Operating System (3140702)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140702' 'Operating System' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140702' 'Operating System' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140702' 'Operating System' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140702' 'Operating System' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Object Oriented Programming-1(Java) ()</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '0000000' 'Object Oriented Programming-1(Java)' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '0000000' 'Object Oriented Programming-1(Java)' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '0000000' 'Object Oriented Programming-1(Java)' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '0000000' 'Object Oriented Programming-1(Java)' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Computer Organization and Architecture (3140707)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140707' 'Computer Organization and Architecture' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140707' 'Computer Organization and Architecture' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140707' 'Computer Organization and Architecture' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140707' 'Computer Organization and Architecture' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Discrete Mathematics (3140708)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140708' 'Discrete Mathematics' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140708' 'Discrete Mathematics' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140708' 'Discrete Mathematics' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140708' 'Discrete Mathematics' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+
+        <li><a>Principles of Economics and Management (3140709)</a>
+            <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140709' 'Principles of Economics and Management' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140709' 'Principles of Economics and Management' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140709' 'Principles of Economics and Management' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '4' '3140709' 'Principles of Economics and Management' 'GTU Question paper' %}">GTU Question paper</a></li>
+            </ul>
+        </li>
+    </ul>
+</li>
+
+
+            <li><a>semester 5</a>
+                <ul class="subjects">
+                    <li><a>Analysis And Design of Algorithms (3150703)</a>
+                    <ul class="study_material">
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150703' 'Analysis And Design of Algorithms' 'assignments' %}">assignments</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150703' 'Analysis And Design of Algorithms' 'notes' %}">notes</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150703' 'Analysis And Design of Algorithms' 'Syllabus' %}">Syllabus</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150703' 'Analysis And Design of Algorithms' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                    </li>
+                    
+                    <li><a>Professional Ethics (3150709)</a>
+                    <ul class="study_material">
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150709' 'Professional Ethics' 'assignments' %}">assignments</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150709' 'Professional Ethics' 'notes' %}">notes</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150709' 'Professional Ethics' 'FAQs' %}">FAQs</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150709' 'Professional Ethics' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                    </li>
+
+                    <li><a>Computer Networks (3150710)</a>
+                    <ul class="study_material">
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150710' 'Computer Networks' 'assignments' %}">assignments</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150710' 'Computer Networks' 'notes' %}">notes</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150710' 'Computer Networks' 'Syllabus' %}">Syllabus</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150710' 'Computer Networks' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                    </li>
+
+                    <li><a>Software Engineering (3150711)</a>
+                    <ul class="study_material">
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150711' 'Software Engineering' 'assignments' %}">assignments</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150711' 'Software Engineering' 'notes' %}">notes</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150711' 'Software Engineering' 'Syllabus' %}">Syllabus</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150711' 'Software Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                    </li>
+
+                    <li><a>Python for Data Science (3150713)</a>
+                    <ul class="study_material">
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150713' 'Python for Data Science' 'assignments' %}">assignments</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150713' 'Python for Data Science' 'notes' %}">notes</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150713' 'Python for Data Science' 'FAQs' %}">FAQs</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150713' 'Python for Data Science' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                    </li>
+                    <li><a>Cyber Security (3150714)</a>
+                    <ul class="study_material">
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150714' 'Cyber Security' 'assignments' %}">assignments</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150714' 'Cyber Security' 'notes' %}">notes</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150714' 'Cyber Security' 'Syllabus' %}">Syllabus</a></li>
+                    <li><a href="{% url 'download_file' 'Computer Engineering' '5' '3150714' 'Cyber Security' 'GTU Question paper' %}">GTU Question paper</a></li>
+                    </ul>
+                    </li>
+                    </ul>
+            </li>
+
+                 <!-- Semester 6 -->
+            <li><a>Semester 6</a>
+                <ul class="subjects">
+
+                <li><a>Theory of Computation (2160704)</a>
+                <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '2160704' 'Theory of Computation' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '2160704' 'Theory of Computation' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '2160704' 'Theory of Computation' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '2160704' 'Theory of Computation' 'GTU Question paper' %}">GTU Question paper</a></li>
+                </ul>
+                </li>
+
+                <li><a>Advance Java (2160707)</a>
+                <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '2160707' 'Advance Java' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '2160707' 'Advance Java' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '2160707' 'Advance Java' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '2160707' 'Advance Java' 'GTU Question paper' %}">GTU Question paper</a></li>
+                </ul>
+                </li>
+
+                <li><a>Microprocessor and Interfacing (3160712)</a>
+                <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160712' 'Microprocessor and Interfacing' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160712' 'Microprocessor and Interfacing' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160712' 'Microprocessor and Interfacing' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160712' 'Microprocessor and Interfacing' 'GTU Question paper' %}">GTU Question paper</a></li>
+                </ul>
+                </li>
+
+                <li><a>WEB Programming (3160713)</a>
+                <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160713' 'WEB Programming' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160713' 'WEB Programming' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160713' 'WEB Programming' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160713' 'WEB Programming' 'GTU Question paper' %}">GTU Question paper</a></li>
+                </ul>
+                </li>
+
+                <li><a>IOT and Applications (3160716)</a>
+                <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160716' 'IOT and Applications' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160716' 'IOT and Applications' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160716' 'IOT and Applications' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160716' 'IOT and Applications' 'GTU Question paper' %}">GTU Question paper</a></li>
+                </ul>
+                </li>
+
+                <li><a>Data Mining (3160714)</a>
+                <ul class="study_material">
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160714' 'Data Mining' 'assignments' %}">assignments</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160714' 'Data Mining' 'notes' %}">notes</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160714' 'Data Mining' 'Syllabus' %}">Syllabus</a></li>
+                <li><a href="{% url 'download_file' 'Computer Engineering' '6' '3160714' 'Data Mining' 'GTU Question paper' %}">GTU Question paper</a></li>
+                </ul>
+                </li>
+
+                </ul>
+            </li>
+
+        
+        </ul>
+    
+    </body>
+
+</html>

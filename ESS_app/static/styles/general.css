@@ -1,0 +1,114 @@
+* {
+    
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nerko One', sans-serif;
+    font-family: 'Cambria', Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: 0.8px;
+}
+
+body {
+    font-family: 'Nerko One', sans-serif;
+    background-color: #f9f9f9;
+    margin: 8px;
+    padding: 0;
+}
+
+.middle-section {
+    display: grid;
+    height: 150px;
+    grid-template-columns: repeat(3, 1fr); /* Simplified column definition */
+    column-gap: 30px;
+    justify-items: center;
+    padding-top: 50px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    background-color: #ffffff; /* White background for better contrast */
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block; /* inline-block for better positioning */
+}
+
+.dropbtn {
+    min-width: 120px; 
+
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: antiquewhite;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; /* Positioned absolutely for dropdown to appear below */
+    min-width: 250px; /* Adjusted width for better usability */
+    z-index: 1;
+    background-color: antiquewhite;
+    border: 1px solid #ddd;
+    border-radius: 4px; /* Rounded corners for a consistent look */
+ 
+}
+
+.dropdown-content a {
+    font-size: 18px; /* Slightly smaller font for better fit */
+    color: #4CAF50;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.dropdown-content a:hover {
+    background-color: darkseagreen;
+    color: antiquewhite;
+    border-radius: 4px;
+    box-shadow: 5px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: darkseagreen;
+    color: antiquewhite;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+#count {
+    width: 200px;
+    height: 40px;
+    background-color: #4CAF50;
+    border-radius: 4px;
+    color: antiquewhite;
+    text-align: center; /* Centered text */
+    line-height: 40px; /* Vertical centering */
+    font-size: 18px; /* Adjusted font size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+#count:hover {
+    background-color: darkseagreen; /* Change background on hover */
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    color: antiquewhite;
+    cursor: pointer;
+    font-size: 1em;
+    padding: 10px 20px;
+    text-align: center;
+    position:center;
+}
+
+button:hover {
+    background-color: #45a049c9;
+}

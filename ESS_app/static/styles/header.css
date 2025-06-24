@@ -1,0 +1,40 @@
+.logo {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 50%;  /* Use 50% for perfect circular shape */
+    max-width: 250px;
+    max-height: 250px;
+    padding: 20px;
+    background-color: darkseagreen;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Smooth hover effect */
+}
+
+.logo:hover {
+    transform: scale(1.05);  /* Slight enlargement on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);  /* More pronounced shadow on hover */
+}
+
+.upper-section {
+    display: flex; 
+    align-items: center;  /* Center items vertically */
+    background-color:  #4CAF50;
+    border: none;
+    min-height: 100px;
+    padding: 20px;  /* Add padding for better spacing */
+    color: white;
+    border-radius: 8px;  /* Rounded corners for a softer look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+.content {
+    padding-left: 20px;
+    font-size: 40px;
+    color: whitesmoke;
+    line-height: 1.5;  /* Improved readability */
+    transition: color 0.3s ease;  /* Smooth transition for color change */
+}
+
+.content:hover {
+    color: #f0e6d6;  /* Slightly lighter color on hover */
+}
