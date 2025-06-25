@@ -147,7 +147,9 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Allowed Hosts
 import os
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "127.0.0.1").split(",")
+ALLOWED_HOSTS = [
+    'elites-study-space.onrender.com',
+]
 
 # Secret Key from environment
 SECRET_KEY = os.getenv("SECRET_KEY", "fallback-secret-key")
