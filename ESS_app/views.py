@@ -1,11 +1,9 @@
 from django.shortcuts import render, redirect
-from django.http import FileResponse, Http404
-from django.http import HttpResponseRedirect, Http404
 from django.conf import settings
-import os
 from django.shortcuts import get_object_or_404
 from .models import StudyMaterial, StudyMoment
 from .forms import StudyMaterialForm
+from django.http import HttpResponse
 
 # View for the home page
 def Home_page(request):
@@ -47,7 +45,7 @@ def download_file(request,branch,semester, subject_code, subject_name, material_
     if study_material.file:
         return redirect(study_material.file.url)
     else:
-        raise Http404("File not found")
+         return HttpResponse("This file is not available at the moment.", status=200)
     
 # view for the uploading the study material by the user
 def upload_file(request):

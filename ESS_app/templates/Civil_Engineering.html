@@ -8,6 +8,7 @@
         {% load static %}
         <link rel="stylesheet" href="{% static 'styles/semester_style.css' %}">
         <link rel="stylesheet" href="{% static 'styles/header.css' %}">
+        <link rel="stylesheet" href="{% static 'styles/footer.css' %}">
         <link href='https://fonts.googleapis.com/css?family=Nerko One' rel='stylesheet'>
     </head>
 
@@ -24,38 +25,50 @@
         <ul class="semester">
             <li><a>Semester 1</a>
                <ul class="subjects">
-                 <li><a>Mathematics-2 (3110015)</a>
+                    <li><a>Mathematics-2 (3110015)</a>
                         <ul class="study_material">
                             <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'assignments' %}">assignments</a></li>
-                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'book
+                                ' %}">book
+                                
+                            </a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'Syllabus' %}">Syllabus</a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110015' 'Maths-2' 'GTU Question paper' %}">GTU Question paper</a></li>
                         </ul>
                     </li>
-                <li><a>Physics (3110018)</a>
-                    <ul class="study_material">
-                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'assignments' %}">assignments</a></li>
-                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'notes' %}">notes</a></li>
-                        <li><a  href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'Syllabus' %}">Syllabus</a></li>
-                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'GTU Question paper' %}">GTU Question paper</a></li>
-                    </ul>
-                </li>
-                <li><a>Basic electrical Engineering (3110005) </a>
-                    <ul class="study_material">
-                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'assignments' %}">assignments</a></li>
-                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'notes' %}">notes</a></li>
-                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'Syllabus' %}">Syllabus</a></li>
-                        <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
-                    </ul>
-                </li>
-                <li><a>Environmental Science (3110007)</a>
-                    <ul class="study_material">
-                        <li><a href="{% url 'download_file' 'Civil Engineering' '1' '3110007' 'Environmental Science' 'assignments' %}">assignments</a></li>
-                        <li><a href="{% url 'download_file' 'Civil Engineering' '1' '3110007' 'Environmental Science' 'notes' %}">notes</a></li>
-                        <li><a href="{% url 'download_file' 'Civil Engineering' '1' '3110007' 'Environmental Science' 'Syllabus' %}">Syllabus</a></li>
-                        <li><a href="{% url 'download_file' 'Civil Engineering' '1' '3110007' 'Environmental Science' 'GTU Question paper' %}">GTU Question paper</a></li>
-                    </ul>
-                </li>
+                    <li><a>Physics (3110018)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a  href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110018' 'Physics' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Basic electrical Engineering (3110005) </a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110005' 'Basic Electrical Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Environmental Science (3110007)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '1' '3110007' 'Environmental Science' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '1' '3110007' 'Environmental Science' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '1' '3110007' 'Environmental Science' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '1' '3110007' 'Environmental Science' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
                </ul>
             </li>
 
@@ -64,7 +77,10 @@
                     <li><a>Engineering Graphic and Design (3110013)</a>
                         <ul class="study_material">
                             <li><a  href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'ENgineering Graphics and Design' 'assignment' %}">assignments</a></li>
-                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'book
+                                ' %}">book
+                                
+                            </a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'Syllabus' %}">Syllabus</a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110013' 'Engineering Gaphics and Design' 'GTU Question paper' %}">GTU Question paper</a></li>
                         </ul>
@@ -72,7 +88,10 @@
                     <li><a>Basic Mechanical Engineering (3110006)</a>
                         <ul class="study_material">
                             <li><a href="{% url 'download_file' 'Civil Engineering' '2' '3110006' 'Basic Mechanical Engineering' 'assignments' %}">assignments</a></li>
-                            <li><a href="{% url 'download_file' 'Civil Engineering' '2' '3110006' 'Basic Mechanical Engineering' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '2' '3110006' 'Basic Mechanical Engineering' 'book
+                                ' %}">book
+                                
+                            </a></li>
                             <li><a href="{% url 'download_file' 'Civil Engineering' '2' '3110006' 'Basic Mechanical Engineering' 'Syllabus' %}">Syllabus</a></li>
                             <li><a href="{% url 'download_file' 'Civil Engineering' '2' '3110006' 'Basic Mechanical Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
                         </ul>
@@ -80,7 +99,10 @@
                     <li><a>Mathematics-1 (3110014)</a>
                         <ul class="study_material">
                             <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'assignments' %}">assignments</a></li>
-                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'book
+                                ' %}">book
+                                
+                            </a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'Syllabus' %}">Syllabus</a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '1' '3110014' 'Maths-1' 'GTU Question paper' %}">GTU Question paper</a></li>
                         </ul>
@@ -88,7 +110,10 @@
                     <li><a>Programming for Problem solving-PPS (3110003)</a>
                         <ul class="study_material">
                             <li><a  href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'assignments' %}">assignments</a></li>
-                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'book
+                                ' %}">book
+                                
+                            </a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'Syllabus' %}">Syllabus</a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '2' '3110003' 'Programming for Problem solving' 'GTU Question paper' %}">GTU Question paper</a></li>
                         </ul>
@@ -101,7 +126,10 @@
                     <li><a>Effective Technical Communication (3130004)</a>
                         <ul class="study_material">
                             <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'assignments' %}">assignments</a></li>
-                            <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'book
+                                ' %}">book
+                                
+                            </a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'Syllabus' %}">Syllabus</a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130004' 'Effective Technical Communication' 'GTU Question paper' %}">GTU Question paper</a></li>
                         </ul>
@@ -110,7 +138,10 @@
                     <li><a>Indian Constitution (3130007)</a>
                         <ul class="study_material">
                             <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130007' 'Indian Constitution' 'assignments' %}">assignments</a></li>
-                            <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130007' 'Indian Constitution' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130007' 'Indian Constitution' 'book
+                                ' %}">book
+                                
+                            </a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130007' 'Indian Constitution' 'Syllabus' %}">Syllabus</a></li>
                             <li><a href="{% url 'download_file' 'Computer Engineering' '3' '3130007' 'Indian Constitution' 'GTU Question paper' %}">GTU Question paper</a></li>
                         </ul>
@@ -118,7 +149,10 @@
                     <li><a>Geotechnical Engineering (3130606)</a>
                         <ul class="study_material">
                             <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130606' 'Geotechnical Engineering' 'assignments' %}">assignments</a></li>
-                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130606' 'Geotechnical Engineering' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130606' 'Geotechnical Engineering' 'book
+                                ' %}">book
+                                
+                            </a></li>
                             <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130606' 'Geotechnical Engineering' 'Syllabus' %}">Syllabus</a></li>
                             <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130606' 'Geotechnical Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
                         </ul>
@@ -127,157 +161,221 @@
                     <li><a>Building Construction Technology (3130607)</a>
                         <ul class="study_material">
                             <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130607' 'Building Construction Technology' 'assignments' %}">assignments</a></li>
-                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130607' 'Building Construction Technology' 'notes' %}">notes</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130607' 'Building Construction Technology' 'book
+                                ' %}">book
+                                
+                            </a></li>
                             <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130607' 'Building Construction Technology' 'Syllabus' %}">Syllabus</a></li>
                             <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130607' 'Building Construction Technology' 'GTU Question paper' %}">GTU Question paper</a></li>
                         </ul>
                     </li>
 
-        <li><a>Mechanics of Solids (3130608)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130608' 'Mechanics of Solids' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130608' 'Mechanics of Solids' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130608' 'Mechanics of Solids' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130608' 'Mechanics of Solids' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Building And Town Plannig (3130609)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130609' 'Building And Town Plannig' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130609' 'Building And Town Plannig' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130609' 'Building And Town Plannig' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130609' 'Building And Town Plannig' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-    </ul>
-</li>
+                    <li><a>Mechanics of Solids (3130608)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130608' 'Mechanics of Solids' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130608' 'Mechanics of Solids' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130608' 'Mechanics of Solids' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130608' 'Mechanics of Solids' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Building And Town Plannig (3130609)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130609' 'Building And Town Plannig' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130609' 'Building And Town Plannig' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130609' 'Building And Town Plannig' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '3' '3130609' 'Building And Town Plannig' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
 
-<li><a>semester 4</a>
-    <ul class="subjects">
-        <li><a>Surveying (3140601)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140601' 'Surveying' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140601' 'Surveying' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140601' 'Surveying' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140601' 'Surveying' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Stuctural Analysis-1 (3140603)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140603' 'Stuctural Analysis-1' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140603' 'Stuctural Analysis-1' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140603' 'Stuctural Analysis-1' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140603' 'Stuctural Analysis-1' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Civil Engineering - Social and Global Impact (3140609)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140609' 'Civil Engineering - Social and Global Impact' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140609' 'Civil Engineering - Social and Global Impact' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140609' 'Civil Engineering - Social and Global Impact' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140609' 'Civil Engineering - Social and Global Impact' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Complex Variable and Partial Differential Equations (3140610)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140610' 'Complex Variable and Partial Differential Equations' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140610' 'Complex Variable and Partial Differential Equations' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140610' 'Complex Variable and Partial Differential Equations' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140610' 'Complex Variable and Partial Differential Equations' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Fluid Mechanics and Hydraulics (3140611)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140611' 'Fluid Mechanics and Hydraulics' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140611' 'Fluid Mechanics and Hydraulics' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140611' 'Fluid Mechanics and Hydraulics' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140611' 'Fluid Mechanics and Hydraulics' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-    </ul>
-</li>
+            <li><a>semester 4</a>
+                <ul class="subjects">
+                    <li><a>Surveying (3140601)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140601' 'Surveying' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140601' 'Surveying' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140601' 'Surveying' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140601' 'Surveying' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Stuctural Analysis-1 (3140603)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140603' 'Stuctural Analysis-1' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140603' 'Stuctural Analysis-1' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140603' 'Stuctural Analysis-1' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140603' 'Stuctural Analysis-1' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Civil Engineering - Social and Global Impact (3140609)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140609' 'Civil Engineering - Social and Global Impact' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140609' 'Civil Engineering - Social and Global Impact' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140609' 'Civil Engineering - Social and Global Impact' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140609' 'Civil Engineering - Social and Global Impact' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Complex Variable and Partial Differential Equations (3140610)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140610' 'Complex Variable and Partial Differential Equations' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140610' 'Complex Variable and Partial Differential Equations' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140610' 'Complex Variable and Partial Differential Equations' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140610' 'Complex Variable and Partial Differential Equations' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Fluid Mechanics and Hydraulics (3140611)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140611' 'Fluid Mechanics and Hydraulics' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140611' 'Fluid Mechanics and Hydraulics' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140611' 'Fluid Mechanics and Hydraulics' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '4' '3140611' 'Fluid Mechanics and Hydraulics' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
 
-  <li><a>semester 5</a>
-    <ul class="subjects">
-        <li><a>Transportation Engineering (3150611)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150611' 'Transportation Engineering' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150611' 'Transportation Engineering' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150611' 'Transportation Engineering' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150611' 'Transportation Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Design of Structures (3150612)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150612' 'Design of Structures' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150612' 'Design of Structures' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150612' 'Design of Structures' 'FAQs' %}">FAQs</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150612' 'Design of Structures' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Pavement Design and Highway Construction (3150613)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150613' 'Pavement Design and Highway Construction' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150613' 'Pavement Design and Highway Construction' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150613' 'Pavement Design and Highway Construction' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150613' 'Pavement Design and Highway Construction' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-    </ul>
-</li>
-<li><a>semester 6</a>
-    <ul class="subjects">
-        <li><a>Advance Construction And Equipments (2160601)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160601' 'Advance Construction And Equipments' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160601' 'Advance Construction And Equipments' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160601' 'Advance Construction And Equipments' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160601' 'Advance Construction And Equipments' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Applied Fluid Mechanics (2160602)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160602' 'Applied Fluid Mechanics' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160602' 'Applied Fluid Mechanics' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160602' 'Applied Fluid Mechanics' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160602' 'Applied Fluid Mechanics' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Railway, Bridge And Tunnel Engineering (2160603)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160603' 'Railway, Bridge And Tunnel Engineering' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160603' 'Railway, Bridge And Tunnel Engineering' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160603' 'Railway, Bridge And Tunnel Engineering' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160603' 'Railway, Bridge And Tunnel Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Water And Waste Water Engineering (2160607)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Water And Waste Water Engineering' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Water And Waste Water Engineering' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Water And Waste Water Engineering' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Water And Waste Water Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Elementary Stuctural Design (2160607)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Elementary Stuctural Design' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Elementary Stuctural Design' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Elementary Stuctural Design' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Elementary Stuctural Design' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        <li><a>Urban Transportation System (2160608)</a>
-            <ul class="study_material">
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160608' 'Urban Transportation System' 'assignments' %}">assignments</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160608' 'Urban Transportation System' 'notes' %}">notes</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160608' 'Urban Transportation System' 'Syllabus' %}">Syllabus</a></li>
-                <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160608' 'Urban Transportation System' 'GTU Question paper' %}">GTU Question paper</a></li>
-            </ul>
-        </li>
-        </li>
+            <li><a>semester 5</a>
+                <ul class="subjects">
+                    <li><a>Transportation Engineering (3150611)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150611' 'Transportation Engineering' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150611' 'Transportation Engineering' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150611' 'Transportation Engineering' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150611' 'Transportation Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Design of Structures (3150612)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150612' 'Design of Structures' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150612' 'Design of Structures' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150612' 'Design of Structures' 'FAQs' %}">FAQs</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150612' 'Design of Structures' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Pavement Design and Highway Construction (3150613)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150613' 'Pavement Design and Highway Construction' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150613' 'Pavement Design and Highway Construction' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150613' 'Pavement Design and Highway Construction' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '5' '3150613' 'Pavement Design and Highway Construction' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li><a>semester 6</a>
+                <ul class="subjects">
+                    <li><a>Advance Construction And Equipments (2160601)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160601' 'Advance Construction And Equipments' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160601' 'Advance Construction And Equipments' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160601' 'Advance Construction And Equipments' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160601' 'Advance Construction And Equipments' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Applied Fluid Mechanics (2160602)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160602' 'Applied Fluid Mechanics' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160602' 'Applied Fluid Mechanics' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160602' 'Applied Fluid Mechanics' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160602' 'Applied Fluid Mechanics' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Railway, Bridge And Tunnel Engineering (2160603)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160603' 'Railway, Bridge And Tunnel Engineering' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160603' 'Railway, Bridge And Tunnel Engineering' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160603' 'Railway, Bridge And Tunnel Engineering' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160603' 'Railway, Bridge And Tunnel Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Water And Waste Water Engineering (2160607)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Water And Waste Water Engineering' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Water And Waste Water Engineering' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Water And Waste Water Engineering' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Water And Waste Water Engineering' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Elementary Stuctural Design (2160607)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Elementary Stuctural Design' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Elementary Stuctural Design' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Elementary Stuctural Design' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160607' 'Elementary Stuctural Design' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Urban Transportation System (2160608)</a>
+                        <ul class="study_material">
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160608' 'Urban Transportation System' 'assignments' %}">assignments</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160608' 'Urban Transportation System' 'book
+                                ' %}">book
+                                
+                            </a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160608' 'Urban Transportation System' 'Syllabus' %}">Syllabus</a></li>
+                            <li><a href="{% url 'download_file' 'Civil Engineering' '6' '2160608' 'Urban Transportation System' 'GTU Question paper' %}">GTU Question paper</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </li>
         </ul>
     
+        
+    <div class="bottom-section">
+        <div class="title">📘 Disclaimer:</div>
+        <div class="about-text">
+        <p>  All study materials on Elite Study Space are shared for educational purposes only.
+             We do not claim ownership of any third-party content. Please respect copyright and intellectual property rights.</p>
+        
+        </div>
+    </div>
+
     </body>
 
 </html>
