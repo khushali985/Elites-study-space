@@ -8,7 +8,7 @@ from django.conf.urls.static import static
 urlpatterns = [
     path('', views.Home_page, name='Home_page'), 
     path('Civil_Engineering.html', views.Civil_Engineering, name='Civil_Engineering'),
-    path('file_not_avilable.html', views.file_not_available, name='file_not_avaible'),
+    path('file_not_available.html', views.file_not_available, name='file_not_available'),
     path('Computer_Engineering.html', views.Computer_Engineering, name='Computer_Engineering'),
     path('Mechanical_Engineering.html', views.Mechanical_Engineering, name='Mechanical_Engineering'),
     path('upload_file/', views.upload_file, name='upload_file'),
