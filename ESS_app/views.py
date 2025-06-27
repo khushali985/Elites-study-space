@@ -45,8 +45,8 @@ def download_file(request,branch,semester, subject_code, subject_name, material_
     if study_material.file:
         return redirect(study_material.file.url)
     else:
-         return HttpResponse("This file is not available at the moment.", status=200)
-    
+         return render(request, "file_not_available.html")
+     
 # view for the uploading the study material by the user
 def upload_file(request):
     # If the request method is POST, it means the form is being submitted
