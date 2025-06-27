@@ -9,6 +9,11 @@ from django.http import HttpResponse
 def Home_page(request):
     return render(request, 'Home_Page.html')
 
+
+def file_not_available(request):
+    return render(request, "file_not_available.html")
+
+
 #View for the Civil_Engineering
 def Civil_Engineering(request):
     files=StudyMaterial.objects.all()
@@ -35,13 +40,7 @@ def download_file(request,branch,semester, subject_code, subject_name, material_
         subject_name=subject_name,
         material_type=material_type
     )
-   # file_path = study_material.file.path if study_material.file else None
-
-    #if file_path and os.path.exists(file_path):
-        #return FileResponse(open(file_path, 'rb'), content_type='application/octet-stream', as_attachment=True, filename=study_material.file.name)
-    #else:
-      #  raise Http404("File is not found")
- # Redirect to the Cloudinary-hosted file
+   # Redirect to the Cloudinary-hosted file
     if study_material.file:
         return redirect(study_material.file.url)
     else:
