@@ -15,7 +15,10 @@ A web platform built for GTU students to **upload and download study materials**
 - **Cloud Storage:** Cloudinary
 
 ## 📸 Screenshots
-<img width="1920" height="1080" alt="Screenshot (155)" src="https://github.com/user-attachments/assets/bdde5c24-4d54-4175-bb9f-41e4198bda11" />
+<img width="1920" height="1021" alt="Screenshot (154)" src="https://github.com/user-attachments/assets/15b02d45-8523-41b3-bd5e-1c939c41d386" />
+
+<img width="1920" height="1015" alt="Screenshot (155)" src="https://github.com/user-attachments/assets/c33821c5-e255-4dcb-8c5a-01cffe650e51" />
+
 
 ## 🔗 Live Demo / Deployment
 👉https://elites-study-space.onrender.com
